@@ -1,16 +1,25 @@
 // Crea due array che hanno un numero di elementi diversi.
 // Aggiungi elementi casuali all’array che ha meno elementi, fino a quando ne avrà tanti quanti l’altro.
 
-var arrLungo = [10, 20, 30, 40, 50];
-var arrCorto = [10, 20, 30];
+var arr1 = [10, 20, 30, 40, 50];
+var arr2 = [10, 20, 30];
 
-var numCasuale = Math.floor(Math.random() * 100 + 10);
+console.log("Lunghezza Array 1 : " + arr1.length);
+console.log("Lunghezza Array 2 : " + arr2.length);
 
-while (arrLungo.lenght > arrCorto.lenght) {
-    arrCorto.push(numCasuale);
-    
+
+if (arr1.length > arr2.length) {
+    while (arr1.length != arr2.length) {
+        arr2.push(Math.floor(Math.random() * 100));
+    }  
+} else if (arr1.length < arr2.length){
+    while(arr1.length != arr2.length) {
+        arr1.push(Math.floor(Math.random() * 100));
+    }
+} else {
+    console.log("Non c'é differenza tra gli elementi")
 }
 
-console.log(arrCorto);
-console.log(arrLungo);
+console.log(arr1);
+console.log(arr2);
 
