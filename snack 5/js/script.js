@@ -4,20 +4,13 @@
 var arrLungo = [10, 20, 30, 40, 50];
 var arrCorto = [10, 20, 30];
 
-var numCasuale = Math.floor(Math.random() * 100);
+var numCasuale = Math.floor(Math.random() * 100 + 10);
 
+while (arrLungo.lenght > arrCorto.lenght) {
+    arrCorto.push(numCasuale);
+    
+}
 
-// do {
-//     var numCasuale = Math.floor(Math.random() * 100);
-//     arrCorto.push(numCasuale);
-//     (JSON.stringify(arrLungo) === JSON.stringify(arrCorto));
+console.log(arrCorto);
+console.log(arrLungo);
 
-// } while (JSON.stringify(arrLungo) != JSON.stringify(arrCorto));
-
-// for (i = 0; 0 < 5; i++) {
-
-//     while (JSON.stringify(arrLungo) != JSON.stringify(arrCorto)) {
-//         arrCorto.push(numCasuale);
-//     }
-// }
-    console.log(arrCorto);
