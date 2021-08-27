@@ -6,19 +6,29 @@ var somma = 0;
 
 // ------- CICLO FOR -------
 
-for (i = 0; i < 5; i++) {
-    var userNumbers = parseInt(prompt('Inserisci un numero'));
-    somma += userNumbers;
-}
+// for (i = 0; i < 5; i++) {
+//     var userNumbers = parseInt(prompt('Inserisci un numero'));
+    
+//     while (isNaN(userNumbers)) {
+//         userNumbers = parseInt(prompt('ATTENZIONE! Inserisci un numero'));
+//     }
+
+//     somma += userNumbers;
+// }
 
 //  ------- CICLO WHILE -------
 
-// i = 0;
+i = 0;
 
-// while (i < 5) {
-//     var userNumbers = parseInt(prompt('Inserisci un numero'));
-//     somma += userNumbers;
-//     i++;
-// }
+while (i < 5) {
+    var userNumbers = parseInt(prompt('Inserisci un numero'));
+
+    while (isNaN(userNumbers)) {
+        userNumbers = parseInt(prompt('ATTENZIONE! Inserisci un numero'));
+    }
+
+    somma += userNumbers;
+    i++;
+}
 
 console.log(somma);
