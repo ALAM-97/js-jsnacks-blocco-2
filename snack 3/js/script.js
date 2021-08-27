@@ -7,6 +7,9 @@ var invitati = [];
 
 for (i = 0; i < 3; i++) {
     var indiceNome = Math.floor(Math.random(nomi) * 6);
+        if (indiceNome == indiceNome) {
+            indiceNome = Math.floor(Math.random(nomi) * 6);
+        }
     var indiceCognome = Math.floor(Math.random(cognomi) * 6);
     var nomiFinali = nomi[indiceNome] + " " + cognomi[indiceCognome];
     invitati.push(nomiFinali);
