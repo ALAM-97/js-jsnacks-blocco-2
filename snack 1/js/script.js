@@ -2,24 +2,22 @@
 // 2. Il programma stampa la somma di tutti i numeri inseriti.
 // 3. Esegui questo programma in due versioni, con il for e con il while.
 
-var numbers = []
 var somma = 0;
 
-
-// CICLO FOR
+// ------- CICLO FOR -------
 
 for (i = 0; i < 5; i++) {
-    var userNumbers = numbers.push(parseInt(prompt('Inserisci un numero')));
-    somma += numbers[i];
+    var userNumbers = parseInt(prompt('Inserisci un numero'));
+    somma += userNumbers;
 }
 
-// CICLO WHILE
+//  ------- CICLO WHILE -------
 
-i = 0;
+// i = 0;
 
 // while (i < 5) {
-//     var userNumbers = numbers.push(parseInt(prompt('Inserisci un numero')));
-//     somma += numbers[i];
+//     var userNumbers = parseInt(prompt('Inserisci un numero'));
+//     somma += userNumbers;
 //     i++;
 // }
 
